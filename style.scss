@@ -8,7 +8,7 @@ body {
 /* 
   Color and size definitions
 */
-$accentColor: #018484;
+$accentColor: #1976D2;
 $textPrimaryColor: rgb(90, 87, 87);
 $textSecondaryColor: #737373;
 $headerPrimaryColor: $accentColor;
@@ -26,6 +26,7 @@ $smallSpacing: 0.5em;
   font-size: $headerPrimarySize;
   color: $textPrimaryColor;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 %bodyPrimary {
@@ -52,6 +53,7 @@ $smallSpacing: 0.5em;
   font-weight: 600;
   font-style: italic;
   color: $textPrimaryColor;
+  text-decoration: none;
 }
 
 /*
@@ -79,6 +81,10 @@ $smallSpacing: 0.5em;
       @extend %bodyPrimary;
       text-decoration: none;
       color: white;
+    }
+
+    ion-icon {
+      transform: translateY(3px);
     }
   }
 }
@@ -152,25 +158,6 @@ $smallSpacing: 0.5em;
     flex-grow: 9999;
     margin: 0 1em 1em 0;
 
-    .outreachSection {
-      display: grid;
-      grid-auto-rows: min-content;
-      grid-gap: $smallSpacing;
-  
-      .outreachItem {
-        display: grid;
-        grid-template-columns: 180px 1fr;
-        grid-template-areas: "title description";
-        grid-gap: $primarySpacing;
-      }
-    }  
-  }
-
-  & > .rightColumn {
-    flex-basis:100px;
-    flex-grow:1;
-    min-width: 300px;
-
     .educationSection {
       display: grid;
       grid-auto-rows: min-content;
@@ -184,8 +171,22 @@ $smallSpacing: 0.5em;
         grid-gap: $primarySpacing;
       }
     }
+  }
 
+  & > .rightColumn {
+    flex-basis:100px;
+    flex-grow:1;
+    min-width: 400px;
+    display: grid;
+    grid-gap: $primarySpacing;
+    
     .skillsSection {
+      grid-auto-rows: min-content;
+      display: grid;
+      grid-gap: $smallSpacing;
+    }
+
+    .hobbiesSection {
       grid-auto-rows: min-content;
       display: grid;
       grid-gap: $smallSpacing;
@@ -212,6 +213,10 @@ $smallSpacing: 0.5em;
 
   .companyName, .schoolName, .projectName, .outreachName {
     @extend %headerPrimary;
+
+    ion-icon {
+      transform: translateY(3px);
+    }
   }
 
   .dateRange {
