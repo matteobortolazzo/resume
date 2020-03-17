@@ -11,7 +11,6 @@
       <ul class="contactDetails">
         <li><a href="mailto:work@matteobortolazzo.com"><ion-icon name="mail"></ion-icon> work@matteobortolazzo.com</a></li>
         <li><a href="https://github.com/matteobortolazzo"><ion-icon name="logo-github"></ion-icon> matteobortolazzo</a></li>
-        <li><a href="https://www.thinkasync.tips/"><ion-icon name="globe"></ion-icon> thinkasync.tips</a></li>
       </ul>
     </div>
     <div class="resumeBody">
@@ -20,13 +19,31 @@
         <span class="sectionHeader">Experience</span>
         <div class="experienceItem">
           <div class="leftColumn">
-            <span class="companyName">Permanent TSB</span>
-            <span class="dateRange">March 2019 - present</span>
+            <span class="companyName">eShopWorld (Contract)</span>
+            <span class="location">Dublin, IE</span>
+            <span class="dateRange">Oct 2019 - present</span>
+          </div>
+          <span class="rightColumn">
+            <span class="jobTitle">Senior Developer</span>
+            <ul class="jobDescription">
+              <li>Developed both front and back ends for different new applications (<em>.NET Core, Angular</em>).</li>
+              <li>Developed libraries for a new company-wide project using <strong>CosmosDB</strong>.</li>
+              <li>Developed authentication, authorisation and user management applications based partially on <em>IdentityServer4</em>.</li>
+              <li>Worked with <em>microservices architecture</em> on top of <strong>Azure Service Fabric</strong>.</li>
+              <li>Worked with Scrum, and <strong>SAFe</strong> later.</li>
+            </ul>
+          </span>
+        </div>
+        <div class="experienceItem">
+          <div class="leftColumn">
+            <span class="companyName">Permanent TSB (Contract)</span>
+            <span class="location">Cork, IE</span>
+            <span class="dateRange">Mar 2019 - Oct 2019</span>
           </div>
           <span class="rightColumn">
             <span class="jobTitle">Senior .NET Developer</span>
             <ul class="jobDescription">
-              <li>Implemented Payment Services Directive 2 (.NET Core, IIS, TFS).</span></li>
+              <li>Implemented Payment Services Directive 2 (.NET Core, IIS, TFS).</li>
               <li>Refactored old code to have a solid base for the future.</li>
               <li>Developed a test library for model validation. A similar implementation is on my <a class="accent" href="https://github.com/matteobortolazzo/ModelValidation.Test">GitHub</a>.</li>
               <li>Developed code to SQL library to sync environments since EF Core migrations were not an option.</li>
@@ -38,7 +55,8 @@
         <div class="experienceItem">
           <div class="leftColumn">
             <span class="companyName">PassperTu</span>
-            <span class="dateRange">May 2017 - March 2019</span>
+            <span class="location">Asolo, IT</span>
+            <span class="dateRange">May 2017 - Mar 2019</span>
           </div>
           <span class="rightColumn">
             <span class="jobTitle">Lead Developer</span>
@@ -54,7 +72,8 @@
         <div class="experienceItem">
           <div class="leftColumn">
             <span class="companyName">Point Security Software</span>
-            <span class="dateRange">June 2010 - May 2017</span>
+            <span class="location">Castelfranco Veneto, IT</span>
+            <span class="dateRange">Jun 2010 - May 2017</span>
           </div>
           <span class="rightColumn">
             <span class="jobTitle">Frontend Developer</span>
@@ -69,19 +88,19 @@
       </div>
       <!-- Projects -->
       <div class="projectsSection">
-        <span class="sectionHeader">Projects</span>
+        <span class="sectionHeader">Main projects</span>
         <div class="projectItem">
           <div class="leftColumn">
             <a class="projectName" href="https://github.com/matteobortolazzo/HtmlLabelPlugin">
               <span>HTML Label <ion-icon name="logo-github"></ion-icon></span>
             </a>
-            <span class="dateRange">2017</span>
+            <span class="dateRange">2017-Now</span>
           </div>
           <span class="rightColumn">
             <ul class="projectDescription">
               <li>Developed a custom Xamarin Forms component to display HTML content.</li>
               <li>Mainteined the plugin for the last 3 year.</li>
-              <li>Package downloaded more than <span class="accent">75k</span> times</span>.</li>
+              <li>Package downloaded more than <span class="accent">150k</span> times</span>.</li>
             </ul>
           </span>
         </div>
@@ -90,42 +109,12 @@
             <a class="projectName" href="https://github.com/matteobortolazzo/couchdb-net">
               <span>CouchDB .NET <ion-icon name="logo-github"></ion-icon></span>
             </a>
-            <span class="dateRange">2019</span>
+            <span class="dateRange">2019-Now</span>
           </div>
           <span class="rightColumn">
             <ul class="projectDescription">
               <li>Developed a .NET driver for the NoSQL database CouchDB.</li>
               <li>Used reflection and expression tree to convert <span class="accent">LINQ into JSON</span>.</li>
-            </ul>
-          </span>
-        </div>
-        <div class="projectItem">
-          <div class="leftColumn">
-            <a class="projectName" href="https://github.com/matteobortolazzo/pomice">
-              <span>ThinkAsync <ion-icon name="logo-github"></ion-icon></span>
-            </a>
-            <span class="dateRange">2018</span>
-          </div>
-          <span class="rightColumn">
-            <ul class="projectDescription">
-              <li>Developed a blog PWA (progressive web app) using StencilJS, ContentfulCMS, Azure (Functions, Storage, CDN, DevOps).</li>
-              <li>Built on web components, prerendered and servered with Azure Storage.</li>
-              <li>A fork for my person blog can be found at <a class="accent" href="https://thinkasync.tips">thinkasync.tips</a>.</li>
-            </ul>
-          </span>
-        </div>
-        <div class="projectItem">
-          <div class="leftColumn">
-            <a class="projectName" href="https://github.com/SweeneyThreads/Actorbase">
-              <span>ActorBase <ion-icon name="logo-github"></ion-icon></span>
-            </a>
-            <span class="dateRange">2017</span>
-          </div>
-          <span class="rightColumn">
-            <ul class="projectDescription">
-              <li>Developed a NoSQL key-value districuted database in team as school project.</li>
-              <li>Leaded the team, architected the infrastructure and developed the core components.</li>
-              <li>Database is built with Scala and Akka following the <span class="accent">actor model</span>.</li>
             </ul>
           </span>
         </div>
@@ -161,7 +150,7 @@
           <div class="rightColumn">
             <div class="skillsSection">
               <span class="sectionHeader">Skills</span>
-              <span class="description">Azure, C#, .NET Core, EF Core, HTML, CSS, JS, Typescript, Angular, Ionic, StencilJS, Docker, Kubernetes, XAML/UWP, TFS, VSTS, Agile, DevOps, Photoshop</span>
+              <span class="description">Azure, C#, .NET Core, EF Core, HTML, CSS, JS, Typescript, Angular, Ionic, StencilJS, Docker, Kubernetes, Service Fabric, XAML/UWP, Agile, Scrum, SAFe, Azure DevOps, Photoshop, Illustrator</span>
             </div>
             <div class="hobbiesSection">
               <span class="sectionHeader">Interests and Hobbies</span>

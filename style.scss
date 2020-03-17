@@ -176,7 +176,7 @@ $smallSpacing: 0.5em;
   & > .rightColumn {
     flex-basis:100px;
     flex-grow:1;
-    min-width: 400px;
+    min-width: 300px;
     display: grid;
     grid-gap: $primarySpacing;
     
@@ -219,9 +219,13 @@ $smallSpacing: 0.5em;
     }
   }
 
+  .location {
+    @extend %bodyPrimary;
+    font-size: 0.90em;
+  }
+
   .dateRange {
     @extend %bodyPrimary;
-    text-transform: uppercase;
     font-size: 0.85em;
   }
 }
