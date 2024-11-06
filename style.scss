@@ -60,7 +60,7 @@ $smallSpacing: 0.5em;
   Body styles
 */
 .header {
-  padding: 20px 40px;
+  padding: 5px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -90,7 +90,7 @@ $smallSpacing: 0.5em;
 }
 
 .resumeBody {
-  padding: 40px;
+  padding: 30px;
   display: grid;
   grid-column: 1;
   grid-auto-rows: auto;
